@@ -129,7 +129,123 @@ main {
     font-weight: 700;
 }
 
-/* teams section done  */
+/* features section start */
+.features-section {
+    display: flex;
+    margin-top: 130px;
+    /* align-items: center; */
+    gap: 146px;
+}
+
+.extra-color {
+
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+
+.card-container .card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card .title {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.features-image img{
+    height: 90%;
+    margin-left: 50px;
+}
+
+.experiences-contain {
+    border-radius: 8px;
+    background: #FF900E;
+    width: 342px;
+    padding: 35px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
+}
+
+
+
+.experiences-contain h2 {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.experiences-contain p {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+
+/* facts section start  */
+.facts-card-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 30px;
+    text-align: center;
+}
+
+.card-value {
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* sponsors section styles */
+.sponsors {
+    text-align: center;
+}
+
+.sponsors-img-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.sponsors-img-container img {
+    width: 165px;
+
+}
+
+.footer{
+    max-width:1440px;
+    background: #FFF4E7;
+    margin: 0 auto;
+    padding: ;
+    text-align: center;
+    padding: 40px ;
+}
+
 
 
 /* responsive styles for mobile and tablet */
@@ -141,18 +257,33 @@ main {
     }
 
     nav,
-    .teams-section {
+    .teams-section,
+    .facts-card-container,
+    .sponsors-img-container, .features-section {
         flex-direction: column;
 
+    }
+    .features-image img{
+        width: 100%;
+        margin: 0;
+    }
+    .experiences-contain{
+        position: static;
+        max-width: 280px;
     }
 
     .teams-image-container {
         grid-template-columns: 1fr;
     }
 
-    .teams-content {
-    padding-left: 20px;
-    padding-right: 20px;
+    .teams-content,
+    .facts-card-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .facts-card-container {
+        gap: 20px;
     }
 }
 
@@ -162,7 +293,9 @@ main {
         padding: 30px;
     }
 
-    nav, .teams-section {
+    nav,
+    .teams-section,
+    .sponsors-img-container, .features-section {
         flex-direction: column;
     }
 
